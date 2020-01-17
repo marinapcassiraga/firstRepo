@@ -67,9 +67,17 @@ for fruit in fruitList:
 # WHILE LOOPS
 x = 0
 
-while x < 10:
+while x < 3:
     print('while example')
     x += 1
 
+human = {
+    "name": 'Mark',
+    "age": 22,
+    "occupation": 'plumber',
+    "is_alive": True
+}
 
-
+print(human["name"])
+print(human.keys()) # Imprime las keys (izquierda)
+print(human.values()) # Imprime los values (derecha)
