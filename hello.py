@@ -81,3 +81,47 @@ human = {
 print(human["name"])
 print(human.keys()) # Imprime las keys (izquierda)
 print(human.values()) # Imprime los values (derecha)
+
+# Los errores se denominan EXCEPTIONS
+# Es importante preverlos xq pueden crashear nuestra app
+
+try:
+    print(human["birthdate"])
+except Exception as error:
+    print('There was an error')
+    print(error) # Imprime el msj de error para que sepamos qué es lo que no funciona
+
+# AGREGAR Y GUARDAR ELEMENTOS A UNA LISTA
+
+students = ['mark', 'james']
+
+def add_students(name):
+    student = {
+        'name': name
+    }
+    students.append(student['name'])
+
+add_students('mary')
+
+print(students)
+
+# ACCESS MODES
+
+f = open('students.txt', 'a')
+f.write(student + '\n') # Each student in a new line
+f.close()
+
+# a = append / w = write / r = read / rb = read a binary file / wb = write to a binary file
+
+# Podemos usar la palabra YIELD en vez de RETURN para crear una GENERATOR FUNCTION
+# Podemos usar yield muchas veces, mientras que return solo una vez (dentro de la misma función)
+# Return causes the function to exit. Yield doesn't.
+
+# LAMBDA FUNCTIONS
+# Funciones anónimas (sin def), de una línea
+
+# 'pass' es una palabra reservada que le dice a Python que ignore algo. útil cuando tenemos placeholders
+
+# SUPER()
+# Cuando estoy en una clase que extiende a otra clase, y necesito acceder a una función/propiedad/lo que sea de
+# la clase padre, uso super()
