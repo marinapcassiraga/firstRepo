@@ -125,3 +125,9 @@ f.close()
 # SUPER()
 # Cuando estoy en una clase que extiende a otra clase, y necesito acceder a una función/propiedad/lo que sea de
 # la clase padre, uso super()
+
+cat = {
+    'name': 'napoleón',
+    'age': 3,
+    'color': 'black and white'
+}
